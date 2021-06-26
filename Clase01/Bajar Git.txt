@@ -1,0 +1,21 @@
+
+
+instalar git
+https://git-scm.com/
+
+
+tecla win  cmd enter
+
+cd  C:\xampp\htdocs
+
+
+git clone https://github.com/mwest0101/UTN_PHPAvanzado_02_2021.git
+
+
+https://desktop.github.com/
+
+
+para actualizar respository
+
+git pull
+
