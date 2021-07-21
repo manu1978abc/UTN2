@@ -71,8 +71,8 @@ try{
 }catch(Exception $errores){
   
   echo $errores->getMessage().LN;
-  $errores=$errores->getPrevious();
-  echo $errores->getMessage();
+  $errores2=$errores->getPrevious();    
+  echo $errores2->getMessage().LN;
       
 }
 /*
