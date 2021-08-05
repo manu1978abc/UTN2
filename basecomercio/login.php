@@ -3,12 +3,21 @@
 
 $allOk=false;
 $smarty->assign('messageError',"");
-if(isset($_POST["usuario"])){
-    $usuario=$_POST["usuario"];
-    $password=$_POST["password"];
+
+if(isset($_POST["usuario"] )){
+ 
     $allOk=true;
+    $result=verifyParams("usuario");
+    $result["valid"] ? $usuario= $result["value"] : $messages["usuario"]=$result["value"];
+    $result["valid"] ? :$allOk=false;
+
+    $result=verifyParams("password");
+    $result["valid"] ? $password= $result["value"] : $messages["password"]=$result["value"];
+    $result["valid"] ? :$allOk=false;
+  
   
 }
+
 if ($allOk){
     $resultSQL=$db->users->login($usuario,$password);
     

@@ -25,11 +25,27 @@
                     <form id="formulario" method="POST">
                             <div class="mb-3">
                             <label for="formGroupExampleInput2">Usuario</label>
-                            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario">
+                            <input type="text" 
+                                   class="form-control" 
+                                   name="usuario" 
+                                   id="usuario" 
+                                   placeholder="Usuario"
+                                    {literal} 
+                                    pattern="[A-Za-z0-9_-áéíóúñÑ]{1,30}" 
+                                    {/literal} 
+                                   >
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2">Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            <input type="password" 
+                                   class="form-control" 
+                                   name="password" 
+                                   id="password"
+                                    placeholder="Password"
+                                    {literal} 
+                                    pattern="[A-Za-z0-9_-áéíóúñÑ]{1,30}" 
+                                    {/literal} 
+                                    >
                         </div>
                     
                         <div class="col-auto">

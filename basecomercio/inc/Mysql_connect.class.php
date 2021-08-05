@@ -6,8 +6,8 @@ class Mysql_Connect{
     public $result;
 
     public function __construct(){
-        $this->db=new mysqli(SERVIDOR,USUARIO,PASSWORD,BD);
-        
+        $this->db=new mysqli(SERVIDOR,USUARIO,PASSWORD,BD);        
+        $this->db->set_charset("utf8");
         
         if($this->db->connect_error){
             $this->connect=false;
@@ -32,6 +32,7 @@ class Mysql_Connect{
     public function numRows(){
         return mysqli_num_rows($this->result); 
     }
+
     public function getOneRow(){
         return mysqli_fetch_assoc($this->result);
     }
@@ -55,6 +56,7 @@ class Mysql_Connect{
             }
         echo "</table>";
     }
+
     public function escStr($str){
         return $this->db->real_escape_string($str);
     }

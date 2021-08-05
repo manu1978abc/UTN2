@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-07-29 01:04:07
+/* Smarty version 3.1.39, created on 2021-08-05 00:03:05
   from 'D:\www\UTN_PHPAvanzado_02_2021\basecomercio\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6101e267a36e25_19592147',
+  'unifunc' => 'content_610b0e991caef0_70542709',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0389faefa314311d54985615376f513458929d85' => 
     array (
       0 => 'D:\\www\\UTN_PHPAvanzado_02_2021\\basecomercio\\templates\\login.tpl',
-      1 => 1627513429,
+      1 => 1628114545,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6101e267a36e25_19592147 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610b0e991caef0_70542709 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -54,11 +54,27 @@ function content_6101e267a36e25_19592147 (Smarty_Internal_Template $_smarty_tpl)
                     <form id="formulario" method="POST">
                             <div class="mb-3">
                             <label for="formGroupExampleInput2">Usuario</label>
-                            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario">
+                            <input type="text" 
+                                   class="form-control" 
+                                   name="usuario" 
+                                   id="usuario" 
+                                   placeholder="Usuario"
+                                     
+                                    pattern="[A-Za-z0-9_-áéíóúñÑ]{1,30}" 
+                                     
+                                   >
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2">Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            <input type="password" 
+                                   class="form-control" 
+                                   name="password" 
+                                   id="password"
+                                    placeholder="Password"
+                                     
+                                    pattern="[A-Za-z0-9_-áéíóúñÑ]{1,30}" 
+                                     
+                                    >
                         </div>
                     
                         <div class="col-auto">

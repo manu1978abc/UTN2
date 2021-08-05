@@ -11,8 +11,11 @@ $allOk=false;
 if(isset($_GET['action'])){
     if($_GET['action']=="login"){
         include("login.php");
+    }else if($_GET['action']=="register"){
+        include("register.php");
     }    
 }
+
 if(!isset($_GET['action']) || $showMain){    
     include("main.php");
 
